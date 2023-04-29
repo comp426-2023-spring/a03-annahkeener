@@ -1,0 +1,27 @@
+{
+  "name": "a03-annahkeener",
+  "version": "1.0.0",
+  "description": "rock paper scissors lizard spokck ig",
+  "main": "./lib/rpsls.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/a03-annahkeener.git"
+  },
+  "author": "annahkeener",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a03-annahkeener/issues"
+  },
+  "bin": {
+    "node-rps": "./bin/rps-cli.js",
+    "node-rpsls": "rpsls-cli.js"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/a03-annahkeener#readme",
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
+}

@@ -19,17 +19,22 @@ if (args.h || args.help) {
     process.exit(0);
 } 
 
-
-if (args.r || args.rules || rpslsOpts.includes(args._[0].toLowerCase())) {
-    console.log("Rules for Rock Paper Scissors:");
-    console.log("   - Scissors CUTS Paper");
-    console.log("   - Paper COVERS Rock");
-    console.log("   - Rock CRUSHES Scissors\n");
-    process.exit(0);
+if (args._[0] == null) {
+    args._[0] = "null";
 } 
 
+if (args.r || args.rules || rpslsOpts.includes(args._[0].toLowerCase())) {
+        console.log("Rules for Rock Paper Scissors:");
+        console.log("   - Scissors CUTS Paper");
+        console.log("   - Paper COVERS Rock");
+        console.log("   - Rock CRUSHES Scissors\n");
+        process.exit(0);
+    } 
 
 console.log("\n" + JSON.stringify(rpsFunct(args)) + "\n");
+
+
+
 
 
 

@@ -6,6 +6,7 @@ console.log("\n------------- ROCK, PAPER, SCISSORS, LIZARD, SPOCK! -------------
 
 const args = minimist(process.argv.slice(2));
 
+
 if (args.h || args.help) {
     console.log("Usage: node-rpsls [SHOT]");
     console.log("Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!\n");

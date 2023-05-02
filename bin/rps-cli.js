@@ -2,7 +2,11 @@
 import minimist from "minimist";
 import { rpsFunct } from "../lib/rpsls.js"
 
+console.log("\n------------- ROCK, PAPER, SCISSORS! -------------\n");
+
 const args = minimist(process.argv.slice(2));
+
+var rpslsOpts = ["lizard", "spock"];
 
 if (args.h || args.help) {
     console.log("Usage: node-rps [SHOT]");
@@ -15,7 +19,7 @@ if (args.h || args.help) {
     process.exit(0);
 } 
 
-if (args.r || args.rules) {
+if (args.r || args.rules || rpslsOpts.includes(args._[0].toLowerCase())) {
     console.log("Rules for Rock Paper Scissors:");
     console.log("   - Scissors CUTS Paper");
     console.log("   - Paper COVERS Rock");
@@ -23,7 +27,6 @@ if (args.r || args.rules) {
 } 
 
 
-console.log("\n------------- ROCK, PAPER, SCISSORS! -------------\n");
 console.log("\n" + JSON.stringify(rpsFunct(args)) + "\n");
 
 

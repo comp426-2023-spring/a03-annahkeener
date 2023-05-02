@@ -8,12 +8,12 @@ const args = minimist(process.argv.slice(2));
 
 if (args.h || args.help) {
     console.log("Usage: node-rpsls [SHOT]");
-    console.log("Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!");
-    console.log("-h, --help      display this help message and exit");
-    console.log("-r, --rules     display the rules and exit");
-    console.log(" Examples: \nnode-rps        Return JSON with single player RPSLS result. \ne.g. {'player':'rock'}");
-    console.log("node-rps rock   Return JSON with results for RPS played against a simulated opponent.");
-    console.log("e.g {'player':'rock','opponent':'Spock','result':'lose'}");
+    console.log("Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!\n");
+    console.log("\n   -h, --help      display this help message and exit");
+    console.log("   -r, --rules     display the rules and exit");
+    console.log("\nExamples: \n   node-rps        Return JSON with single player RPSLS result. \n                   e.g. {'player':'rock'}");
+    console.log("   node-rps rock   Return JSON with results for RPS played against a simulated opponent.");
+    console.log("                   e.g {'player':'rock','opponent':'Spock','result':'lose'}\n");
     process.exit(0);
 } 
 
@@ -28,7 +28,8 @@ if (args.r || args.rules) {
     console.log("   - Lizard EATS Paper");
     console.log("   - Paper DISPROVES Spock");
     console.log("   - Spock VAPORIZES Rock");
-    console.log("   - Rock CRUSHES Scissors");
+    console.log("   - Rock CRUSHES Scissors\n");
+    process.exit(0);
 } 
 
 

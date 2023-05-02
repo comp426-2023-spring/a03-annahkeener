@@ -1,5 +1,5 @@
 {
-  "name": "a03-annahkeener",
+  "name": "node-rpsls",
   "version": "1.0.0",
   "description": "rock paper scissors lizard spokck ig",
   "main": "./lib/rpsls.js",

@@ -22,13 +22,9 @@ if (args.r || args.rules) {
     console.log("   - Rock CRUSHES Scissors");
 } 
 
-if (args._[0] == null) {
-    playerChoice = "rock";
-} else {
-    var playerChoice = args._[0].toLowerCase();
-}
 
-rpsFunct(playerChoice);
+console.log("\n------------- ROCK, PAPER, SCISSORS! -------------\n");
+console.log("\n" + JSON.stringify(rpsFunct(args)) + "\n");
 
 
 

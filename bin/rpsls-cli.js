@@ -8,6 +8,10 @@ const args = minimist(process.argv.slice(2));
 
 var possibilities = ["lizard", "spock", "rock", "paper", "scissors"];
 
+if (args._[0] == null) {
+    args._[0] = "null";
+} 
+
 if (args.h || args.help ) {
     console.log("Usage: node-rpsls [SHOT]");
     console.log("Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!\n");
@@ -20,7 +24,7 @@ if (args.h || args.help ) {
 } 
 
 if (args.r || args.rules) {
-    console.log("Rules for Rock Paper Scissors:");
+    console.log("Rules for the Lizard-Spock Expansion of Rock Paper Scissors:");
     console.log("   - Scissors CUTS Paper");
     console.log("   - Paper COVERS Rock");
     console.log("   - Rock SMOOSHES Lizard");

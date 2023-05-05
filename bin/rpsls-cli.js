@@ -39,15 +39,7 @@ if (args.r || args.rules) {
 } 
 
 if ((!(possibilities.includes(args._[0].toLowerCase())))) {
-    console.log("Usage: node-rpsls [SHOT]");
-    console.log("Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!\n");
-    console.log("\n   -h, --help      display this help message and exit");
-    console.log("   -r, --rules     display the rules and exit");
-    console.log("\nExamples: \n   node-rps        Return JSON with single player RPSLS result. \n                   e.g. {'player':'rock'}");
-    console.log("   node-rps rock   Return JSON with results for RPS played against a simulated opponent.");
-    console.log("                   e.g {'player':'rock','opponent':'Spock','result':'lose'}\n");
-    
-    console.log("\nRules for Rock Paper Scissors:");
+    console.log("Rules for the Lizard-Spock Expansion of Rock Paper Scissors:");
     console.log("   - Scissors CUTS Paper");
     console.log("   - Paper COVERS Rock");
     console.log("   - Rock SMOOSHES Lizard");
@@ -58,6 +50,15 @@ if ((!(possibilities.includes(args._[0].toLowerCase())))) {
     console.log("   - Paper DISPROVES Spock");
     console.log("   - Spock VAPORIZES Rock");
     console.log("   - Rock CRUSHES Scissors\n");
+
+    console.log("Usage: node-rpsls [SHOT]");
+    console.log("Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!\n");
+    console.log("\n   -h, --help      display this help message and exit");
+    console.log("   -r, --rules     display the rules and exit");
+    console.log("\nExamples: \n   node-rps        Return JSON with single player RPSLS result. \n                   e.g. {'player':'rock'}");
+    console.log("   node-rps rock   Return JSON with results for RPS played against a simulated opponent.");
+    console.log("                   e.g {'player':'rock','opponent':'Spock','result':'lose'}\n");
+    
     process.exit(0);
 }
 

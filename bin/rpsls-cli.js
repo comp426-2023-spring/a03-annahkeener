@@ -38,7 +38,7 @@ if (args.r || args.rules) {
     process.exit(0);
 } 
 
-if ((!(possibilities.includes(args._[0].toLowerCase())))) {
+if ((!(possibilities.includes(args._[0].toLowerCase()))) && args._[0] != "null") {
     console.log("Rules for the Lizard-Spock Expansion of Rock Paper Scissors:");
     console.log("   - Scissors CUTS Paper");
     console.log("   - Paper COVERS Rock");
